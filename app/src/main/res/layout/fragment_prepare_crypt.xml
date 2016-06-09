@@ -1,0 +1,106 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.PrepareCryptFragment"
+            android:background="?android:windowBackground"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/keyline_2"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/file_icon"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/binary_file"
+                />
+            <LinearLayout
+                android:id="@+id/file_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/file_icon"
+                android:layout_marginLeft="@dimen/keyline_1"
+                android:layout_toRightOf="@id/file_icon"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/file_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:lines="1"
+                    tools:text="Ticket-Printdsfjsdfjlksdflsdfjsdklfjskljfslkdfkjsdljsdfsdfsdf.pdf"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=".minilock"
+                    android:lines="1"
+                    tools:ignore="HardcodedText"
+                    android:layout_weight="1"
+
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/file_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/file_name_layout"
+                android:layout_below="@id/file_name_layout"
+                tools:text="356KB"
+                />
+            <TextView
+                android:id="@+id/save_with_random_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/file_size"
+                android:layout_marginLeft="@dimen/keyline_1"
+                android:layout_toRightOf="@id/file_size"
+                android:text="@string/use_random_name"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/keyline_1"
+            android:text="Who is allowed to open this file?"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paste a miniLock ID for each person who need access."
+            />
+        <com.uliamar.minilock.ui.RecipientInputHolder
+            android:id="@+id/recipient_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           />
+        <TextView
+            android:id="@+id/cryptButton"
+            style="@style/Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:text="Crypt"
+            />
+    </LinearLayout>
+
+</ScrollView>

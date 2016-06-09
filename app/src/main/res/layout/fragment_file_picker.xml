@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cifferBackgroud"
+            tools:context=".ui.FilePickerFragment"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/minilockIdBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/keyline_2"
+            android:minHeight="48dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/labelBackground"
+                android:gravity="center_vertical"
+                android:padding="@dimen/keyline_1"
+                android:text="@string/my_minilock_id"
+                />
+            <TextView
+                android:id="@+id/minilockIDDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/miniLockID_backgroundcolor"
+                android:gravity="center_vertical"
+                android:padding="@dimen/keyline_1"
+                tools:text="GVLpCwwFaU9nh3N5MX1aazfkTRbfQoZ9qn12UdU453Uq9"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/keyline_2"
+            android:layout_marginLeft="@dimen/keyline_2"
+            android:layout_marginRight="@dimen/keyline_2"
+            android:padding="@dimen/keyline_2"
+            >
+            <ImageView
+                android:id="@+id/binaryLogo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="64dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/binary_file"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/binaryLogo"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/keyline_2"
+                android:background="@color/filePickerHint"
+                android:orientation="vertical"
+                android:padding="@dimen/keyline_1"
+                >
+                <TextView
+                    android:id="@+id/button_filePicker"
+                    style="@style/Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/keyline_1"
+                    android:text="Select file to decrypt/encrypt"
+                    />
+                <TextView
+                    android:id="@+id/button_minilock_folder"
+                    style="@style/Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/keyline_1"
+                    android:text="miniLock's folder"
+                    />
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="@dimen/keyline_1"-->
+                    <!--android:background="@color/filePickerSubHint"-->
+                    <!--android:padding="@dimen/keyline_1"-->
+                    <!--android:text="Or in any app, select a file and tap share with > miniLock"-->
+                    <!--/>-->
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

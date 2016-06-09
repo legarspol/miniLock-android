@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="android:windowBackground">@color/defaultBlue</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:colorBackground">@color/defaultBlue</item>
+        <item name="android:textColorHint">@color/inputText</item>
+        <item name="colorAccent">@color/textColor</item>
+        <item name="android:buttonStyle">@style/Button</item>
+        <item name="android:editTextStyle">@style/Input</item>
+    </style>
+
+
+    <style name="Input" parent="Widget.AppCompat.EditText">
+        <item name="android:padding">@dimen/keyline_1</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:background">@color/input</item>
+    </style>
+
+    <style name="Input.Online">
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="Button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/input</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingRight">@dimen/keyline_2</item>
+        <item name="android:paddingLeft">@dimen/keyline_2</item>
+    </style>
+
+
+    <style name="BigTitle" parent="TextAppearance.AppCompat.Inverse">
+        <item name="android:layout_marginTop">@dimen/keyline_4</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+</resources>

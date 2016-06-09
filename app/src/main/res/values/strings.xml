@@ -1,0 +1,89 @@
+<resources>
+
+    <string-array name="minilock_exception">
+        <!--0-->
+        <item>Can\'t write this file</item>
+        <!--1-->
+        <item>This file seems to be encrypted for another version of miniLock.</item>
+        <!--2-->
+        <item>miniLock could not decrypt this file — it might be corrupt.</item>
+        <!--3-->
+        <item>This file does not seem to be encrypted for your miniLock ID. Check that you are logged in with the correct miniLock ID.</item>
+        <!--4-->
+        <item>miniLock could not determine the sender of this file.</item>
+        <!--5-->
+        <item>Your phone do not handle Utf-8. Just Throw it away. Do it.</item>
+        <!--6-->
+        <item>Nacl Error, unable to decrypt</item>
+        <!--7-->
+        <item>miniLock could not decrypt this file.</item>
+        <!--8-->
+        <item>The integrity of this file could not be verified.</item>
+        <!--9-->
+        <item>Output file already exists</item>
+        <!--10-->
+        <item>Can\'t remove temporary file</item>
+        <!--11-->
+        <item>Please give the app the right to interact with device storage</item>
+    </string-array>
+
+
+    <string name="app_name">Minilock</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="manual_1">miniLock uses your email and passphrase to derive your <strong>miniLock
+        ID</strong>.\nSend your miniLock ID to others so they can encrypt files to you. Encrypt
+        files to friends using their miniLock IDs.
+    </string>
+    <string name="manual_2">Your email is only used to derive your miniLock ID — it remains
+        completely secret and anonymous.
+    </string>
+    <string name="mail_hint">Enter your email address</string>
+    <!--(used for your miniLock ID)-->
+    <string name="login_title">Enter your email and passphrase</string>
+    <string name="passphrase_hint">Enter your passphrase</string>
+    <string name="login_contextual_hint">Enter your email and passphrase…</string>
+    <!--(make it unique, it keeps you secure)-->
+    <string name="passphrase_too_weak">The passphrase you have entered is too weak. Having a long,
+        unique key is very important for using miniLock. Try using a
+        <strong>phrase</strong>
+        that makes sense only to you.
+        <br />
+        <br />
+        We strongly recommend allowing miniLock to generate a key for you:
+        <br />
+    </string>
+    <string name="unlocking">Unlocking...</string>
+    <string name="my_minilock_id">my miniLock ID</string>
+    <string name="unable_to_display_minilockid">Unable to display miniLockId</string>
+    <string name="please_enter_valid_email">Please enter a valid email address.</string>
+    <string name="please_enter_passphrase">Please enter a passphrase.</string>
+    <string name="unable_retrieve_keypair">Unable to retrieve your keypair</string>
+    <string name="unable_check_file_magicCode">Unable to check file magicCode</string>
+    <string name="encrypting_dotx3">Encrypting...</string>
+    <string name="decrypting_dotx3">Decrypting...</string>
+    <string name="recipient_label_me">Me</string>
+    <string name="recipient_label_invalid">Invalid</string>
+    <string name="file_detail_action_share">Share</string>
+    <string name="action_logout">\"Disconnect\" from miniLock</string>
+    <string name="use_original_name">Use original name</string>
+    <string name="use_random_name">Use a random file name</string>
+    <string name="action_delete">Delete</string>
+    <string name="minilock_about">This app is an unofficial porting of Nadim Kobeissi\'s miniLock
+        app for desktop.\n\nOriginal application and porting are both under AGPLv3 License.
+        Checkout Nadim\'s <a href="https://minilock.io">application website</a> for more
+        information about miniLock. Checkout <a
+            href="https://github.com/legarspol/miniLock-android">android sources</a> on github</string>
+    <string name="about_2"><b>Scrypt</b>\nThis app uses <a href="https://github.com/haochenx/scrypt/tree/1.4.0-371d55">
+        the fork of haochenx</a> of <a href="https://github.com/wg/scrypt">Will Glozer\'s java
+        SCrypt implementation</a>
+\n\n<b>TweetNacl</b>\n<a href="https://github.com/InstantWebP2P/tweetnacl-java">https://github.com/InstantWebP2P/tweetnacl-java</a>
+        Copyright(2014-2015)
+        by tom zhou, <a href="mailto:iwebpp@gmail.com">iwebpp@gmail.com</a>\n\n<b>Blake2s Java
+            implementation</b>\n<a href="https://github.com/legarspol/java-blake2s">https://github.com/legarspol/java-blake2s</a>
+
+
+    </string>
+</resources>

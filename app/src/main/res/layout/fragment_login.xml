@@ -1,0 +1,155 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/keyline_2"
+        android:layout_marginStart="@dimen/keyline_2"
+        android:orientation="vertical"
+        tools:context=".ui.LoginFragment"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/loginTitle"
+            style="@style/BigTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_title"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/keyline_2"
+            android:text="@string/manual_1"
+            android:textSize="14sp"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/keyline_2"
+            android:text="@string/manual_2"
+            android:textSize="14sp"
+            />
+        <android.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/keyline_2"
+            />
+        <EditText
+            android:id="@+id/mail_input"
+            style="@style/Input.Online"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/keyline_2"
+            android:hint="@string/mail_hint"
+            android:inputType="textEmailAddress"
+
+            />
+        <EditText
+            android:id="@+id/passphrase_input"
+            style="@style/Input.Online"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/keyline_2"
+            android:fontFamily="sans-serif"
+            android:hint="@string/passphrase_hint"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/showPassphraseButton"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/keyline_1"
+                android:src="@drawable/ic_eye_white_24dp"
+                />
+            <TextView
+                android:id="@+id/valid_input"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="96dp"
+                android:text=">"
+                />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/keyline_2"
+            android:layout_marginTop="@dimen/keyline_2"
+            android:background="@color/weakpassword_background"
+            android:orientation="vertical"
+            android:padding="@dimen/keyline_1"
+            >
+            <TextView
+                android:id="@+id/loginRecommandation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_contextual_hint"
+                />
+
+            <LinearLayout
+                android:id="@+id/recommended_pass_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible"
+                >
+
+
+                <TextView
+                    android:id="@+id/recommended_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/keyline_1"
+                    android:layout_marginTop="@dimen/keyline_1"
+                    android:background="@color/input"
+                    android:padding="@dimen/keyline_1"
+                    android:textColor="@color/textColor"
+                    tools:text="slacken formalist valuables unrolled vertices snowing absorbency"
+
+                    />
+                <TextView
+                    android:id="@+id/another_button"
+                    style="@style/Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:minWidth="96dp"
+                    android:text="An other"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/aboutbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_info_black_24dp"
+            android:layout_gravity="center"
+            android:tint="#FFFFFFFF"
+            android:alpha="0.4"
+            android:padding="@dimen/keyline_1"
+            />
+    </LinearLayout>
+</ScrollView>

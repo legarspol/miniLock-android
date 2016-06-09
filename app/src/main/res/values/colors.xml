@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="defaultBlue">#48688E</color>
+    <color name="darkBlue">#3D5879</color>
+    <color name="darkdarkBlue">#415464</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="input">#5A7799</color>
+    <color name="inputText">#ABBBCC</color>
+    <color name="cifferBackgroud">#6F8FAE</color>
+    <color name="labelBackground">#9AB1C7</color>
+    <color name="weakpassword_background">#3D5879</color>
+    <color name="miniLockID_backgroundcolor">#7D9BB6</color>
+    <color name="filePickerHint">#52697D</color>
+    <color name="filePickerSubHint">#415464</color>
+    <color name="recipientLabel">#A2B6CD</color>
+    <color name="recipientLabelInvalid">#cda2ab</color>
+</resources>

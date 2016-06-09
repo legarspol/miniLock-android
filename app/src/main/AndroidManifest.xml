@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.uliamar.minilock"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".ui.MinilockApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+
+        </activity>
+
+        <activity
+            android:name=".ui.FilePickerActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.CryptActivity"
+            android:label="Crypt"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.FilePickerActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+
+        </activity>
+
+        <service
+            android:name=".minilocklib.MiniLockService"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.ListFileActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.FilePickerActivity" />
+        <activity
+            android:name=".ui.FileDetailsActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.ListFileActivity" />
+
+        <activity
+            android:name=".ui.AboutActivity"
+            android:launchMode="singleTop"
+            android:label="About"
+            android:parentActivityName=".ui.LoginActivity" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

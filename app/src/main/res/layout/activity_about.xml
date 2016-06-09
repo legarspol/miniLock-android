@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/keyline_2"
+        tools:context=".ui.AboutActivity"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/keyline_2"
+            android:text="miniLock"
+            android:textSize="44sp"
+            />
+
+        <TextView
+            android:id="@+id/about1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/minilock_about"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/keyline_1"
+            android:paddingBottom="@dimen/keyline_2"
+            android:paddingTop="@dimen/keyline_2"
+            android:text="Open source licences"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:id="@+id/about2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_2"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

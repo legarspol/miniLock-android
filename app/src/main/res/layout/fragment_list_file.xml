@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?android:windowBackground"
+    >
+    <LinearLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/keyline_2"
+        android:paddingRight="@dimen/keyline_2"
+        >
+        <TextView
+            style="@style/BigTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="miniLock's Directory"
+            />
+        <TextView
+            android:paddingTop="@dimen/keyline_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This folder is visible by every user and application of your phone."
+
+            />
+        <FrameLayout
+            android:paddingTop="@dimen/keyline_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/row_file_list"
+                />
+
+            <TextView
+                android:id="@+id/emptyView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="No files found"
+                android:visibility="gone"
+
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/loadingView"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/errorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Unable to read file list"
+        />
+</FrameLayout>
