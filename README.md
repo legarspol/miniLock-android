@@ -9,30 +9,31 @@ Unlike many software, miniLock do not needs you to store and keep safe it's cryp
 
 
 
+### Contributing
+Any contribution is welcome either by filling bug in the github issue tracker or by picking one item in the todo :-)
 
-
-### How to build:
-
-- Open the sources with Android studio
-- Press Play
-- Done
-
-This app uses @haochenx fork of wg/scrypt. The scrypt library is already compiled and included in the project. If you want to recompile them the current version of the app uses the commit `371d55c` which you can fetch [either on Hao Chen repo](https://github.com/haochenx/scrypt/tree/1.4.0-371d55) or [in the copy left in this repo](./Document/scrypt haochen.zip). Only 2 lines got edited: the one which yell the user's credential in the consol ;-) 
-
-
-### Todo
+#### Todo
 - Remove fabric secret of android manifest
 - Better notification (Display loading in full screen when user click on notification)
 - Handle `Send to > miniLock` Action
 - calculate the entropy of the inputed password with zxcvbn
-- Phrase.secureRandom isn't secure and isn't random
+- Phrase.secureRandom shoud be rewritten
 - Make a lib of the core
 
 
-### Feature Idea
+#### Feature Idea
 - Make the test of the key derivation run without calling it in the MainActivity
 - Handle zip
 - Have a crypted contact list in the app
+
+
+#### How to build:
+
+- Open the sources with Android studio
+- in /app create a file fabric.properties thanks to the model in the same folder
+- Press Play
+
+This app uses @haochenx fork of wg/scrypt. The scrypt library is already compiled and included in the project. If you want to recompile them the current version of the app uses the commit `371d55c` which you can fetch [either on Hao Chen repo](https://github.com/haochenx/scrypt/tree/1.4.0-371d55) or [in the copy left in this repo](./Document/scrypt haochen.zip). Only 2 lines got edited: the one which yell the user's credential in the consol ;-) 
 
 
 ### Credits
