@@ -1,11 +1,11 @@
 ## miniLock for Android
 
-This app is an unofficial porting of [miniLock](https://minilock.io/) for Android.
+This app is an unofficial port of [miniLock](https://minilock.io/) for Android.
  
-You now can crypt and decrypt files on the go with miniLock for Android. You'll never be stuckt with a .miniLock on mobile anymore !
+You now can encrypt and decrypt files on the go with miniLock for Android. You'll never be stuck with a .miniLock on mobile anymore !
  
-miniLock is an inovative cryptographic software which allows you to crypt files and send it to your friend or keep it to yourself and only yourself.
-Unlike many software, miniLock do not needs you to store and keep safe it's cryptographic key. The cryptographic key is derivated from your input on a login/password shape.
+miniLock is an innovative cryptographic software which allows you to encrypt files and send it to your friend or keep it to yourself and only yourself.
+Unlike many software, miniLock do not needs you to store and keep it's cryptographic key safe. The cryptographic key is derivated from your input on a login/password shape.
 
 
 
