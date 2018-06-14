@@ -98,7 +98,7 @@ public class LoginFragment extends Fragment {
 
   private Phrase getPhrase() {
     if (phrase == null) {
-      phrase = new Phrase(getActivity());
+      phrase = new Phrase(new PhraseDictionaryParser(getContext()).getDictionary());
     }
     return phrase;
   }

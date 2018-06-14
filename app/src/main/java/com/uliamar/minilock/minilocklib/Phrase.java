@@ -1,16 +1,12 @@
 package com.uliamar.minilock.minilocklib;
 
-import android.content.Context;
-
-import com.uliamar.minilock.R;
-
 import java.security.SecureRandom;
 
 public class Phrase {
   String[] words;
 
-  public Phrase(Context context) {
-    words = context.getString(R.string.words_catalog).split(",");
+  public Phrase(String[] words) {
+    this.words = words;
   }
 
   //  // Utility function: Secure function that returns a number in the range [0, count)
