@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 
+import com.crashlytics.android.answers.Answers;
+import com.crashlytics.android.answers.CustomEvent;
 import com.uliamar.minilock.minilocklib.MinilockFile;
 import com.uliamar.minilock.ui.utils.MiniLockLifecycle;
 
@@ -37,8 +39,10 @@ public class CryptActivity extends AppCompatActivity {
     MinilockFile file = getIntent().getExtras().getParcelable(PARAM_MINILOCKFILE);
     if (getIntent().getBooleanExtra(PARAM_IS_CRYPT_ACTION, true)) {
       fragment = PrepareCryptFragment.newInstance(file);
+      Answers.getInstance().logCustom(new CustomEvent("Encrypt Start"));
     } else {
       fragment = CryptFragment.newDecryptInstance(file);
+      Answers.getInstance().logCustom(new CustomEvent("Decrypt Start"));
     }
 
     getSupportFragmentManager()

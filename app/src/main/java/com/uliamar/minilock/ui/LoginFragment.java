@@ -15,6 +15,8 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.crashlytics.android.answers.Answers;
+import com.crashlytics.android.answers.LoginEvent;
 import com.uliamar.minilock.BuildConfig;
 import com.uliamar.minilock.R;
 import com.uliamar.minilock.minilocklib.Crypto;
@@ -183,6 +185,7 @@ public class LoginFragment extends Fragment {
       Log.d(TAG, miniLockID);
       if (Util.validateID(miniLockID)) {
         getActivity().startActivity(FilePickerActivity.createIntent(getActivity()));
+        Answers.getInstance().logLogin(new LoginEvent().putSuccess(true));
         hasToCleanOnStop = true;
         getActivity().finish();
       }
@@ -191,6 +194,7 @@ public class LoginFragment extends Fragment {
       if (getView() != null) {
         Snackbar.make(getView(), R.string.unable_retrieve_keypair, Snackbar.LENGTH_LONG).show();
         loginRecommandation.setText(R.string.login_contextual_hint);
+        Answers.getInstance().logLogin(new LoginEvent().putSuccess(false));
       }
     }
 
